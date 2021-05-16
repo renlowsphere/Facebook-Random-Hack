@@ -16,6 +16,7 @@ system("clear");
  system("termux-open-url https://t.me/renlowsphere");
   sleep(1);
 $h3 = "https://m.facebook.com/login.php";
+echo "\>Type in the password you want to use on the random accounts \n Example:11223344 \n </";
 $b4 = readline("~>[#] Password: ");
 $w5 = readline(" ~>[#] Count: ");
 sleep(1);
